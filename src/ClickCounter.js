@@ -3,20 +3,26 @@ import React, { Component } from "react";
 class ClickCounter extends Component {
   constructor(props) {
     super(props);
-    this.onclickButton = this.onclickButton.bind(this);
+    this.onClickButton = this.onClickButton.bind(this);
     this.state = { count: 0 };
   }
 
-  onclickButton() {
+  onClickButton() {
     this.setState({ count: this.state.count + 1 });
   }
 
   render() {
+    const counterStype = {
+      margin: "16px"
+    }
+
     return (
-      <div>
-        <button onClick={this.onclickButton}>Click Me</button>
+      <div style={counterStype}>
         <div>
-          Click Count: {this.state.count}
+          <button onClick={this.onClickButton}>Click Me</button>
+          <div>
+            Click Count: <span id="clickCount">{this.state.count}</span>
+          </div>
         </div>
       </div>
     );
