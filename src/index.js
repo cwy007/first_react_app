@@ -4,6 +4,7 @@ import './index.css';
 import ClickCounter from './ClickCounter';
 import * as serviceWorker from './serviceWorker';
 
+// 两个参数：组件，挂载的点
 ReactDOM.render(<ClickCounter />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
