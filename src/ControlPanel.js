@@ -38,3 +38,12 @@ class ControlPanel extends Component {
 }
 
 export default ControlPanel;
+
+// onUpdate 回调函数
+// bug
+// 数据的不一致
+// 逻辑上应该相同的状态分别存在不同的组件中
+// 状态的领头羊，以它的状态为准
+// 数据源，全局状态
+// 全局状态是唯一的可靠数据源
+// 组件质量，组件对外接口清晰简洁
