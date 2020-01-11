@@ -47,3 +47,26 @@ export default ControlPanel;
 // 数据源，全局状态
 // 全局状态是唯一的可靠数据源
 // 组件质量，组件对外接口清晰简洁
+
+// flux vs redux
+// 单向数据流
+// 理念
+// react + redux
+// React 是用来替换 JQuery 的，Flux 是替换 Ember.js mvc 框架的
+
+// React 相当于 V，view 部分
+// 将一个应用划分为多个组件
+// 分而治之
+// 业务逻辑
+// 界面渲染逻辑
+// view 和 model 可以直接通信
+// 认知差别
+// controler--model--view
+// 单向数据流
+// 传递消息
+// flux：更严格的数据流控制
+
+// Dispatcher 处理动作分发，维持 Store 之间的依赖关系
+// Store 负责存储数据和处理数据相关逻辑
+// Action 驱动 Dispatcher 的 js 对象
+// View 视图部分，负责显示用户界面
